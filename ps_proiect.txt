@@ -1,0 +1,10 @@
+o platforma de cumparare/vanzare automobile
+- utilizatorul poate fi cumparator/vanzator
+- vanzatorul poate pune specificatii tehnice, pret si poze pentru fiecare masina de vandut, si poate lasa date de contact
+- cumparatorul poate cauta masina dupa marca, model, tip, pret, an, combustibil, nr de km rulati 
+- cumparatorul poate accesa pagina referitoare la masina de cumparat, sa lase comentariu pe pagina masinii
+- va fi disponibila si o sectiune de chat - un utilizator poate da mesaj direct catre alti utilizatori
+- istoric revizii la nivel de masina, revizii = evenimente importante (accidente)
+
+dotnet (api)
+interfata (vue.js)

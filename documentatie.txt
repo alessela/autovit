@@ -1,0 +1,15 @@
+1) https://www.youtube.com/watch?v=j8gM6pBrclI&t=1522s&ab_channel=CodewithJulian
+2) https://blog.jetbrains.com/dotnet/2020/03/05/working-databases-jetbrains-rider/
+3) https://dev.mysql.com/doc/dev/connector-net/6.10/html/M_MySql_Data_EntityFrameworkCore_Extensions_MySQLPropertyBuilderExtensions_UseMySQLAutoIncrementColumn.html
+4) https://www.c-sharpcorner.com/article/tutorial-use-entity-framework-core-5-0-in-net-core-3-1-with-mysql-database-by2/
+5) https://www.reddit.com/r/dotnet/comments/pffjy0/ef_db_migrations_in_jbs_rider/
+6) https://www.youtube.com/watch?v=Fbf_ua2t6v4&t=406s&ab_channel=PatrickGod
+7) https://www.jetbrains.com/help/rider/vue_js.html#ws_vue_working_with_vue_components
+8) https://github.com/yanpitangui/dotnet-api-boilerplate/blob/b9f09ee43c0716286fd9e1f7abfc9f434c4ef0d5/src/Boilerplate.Api/Startup.cs
+9) https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/providers?tabs=dotnet-core-cli
+10) https://stackoverflow.com/questions/64670235/ef-core-table-name-already-exists-when-trying-to-update-database
+11) https://stackoverflow.com/questions/44379560/how-to-enable-cors-in-asp-net-core-webapi
+12) https://www.youtube.com/watch?v=WNKwdgr34fA&list=PLlameCF3cMEti_wQrnx9lqlgpTGN9RcqZ&ab_channel=ScalableScripts
+13) https://stackoverflow.com/questions/3304014/how-to-interpolate-variables-in-strings-in-javascript-without-concatenation
+14) https://www.javascripttutorial.net/javascript-string-replace/
+15) https://stackoverflow.com/questions/41301099/do-we-have-router-reload-in-vue-router
