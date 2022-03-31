@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\proiecte c#\\autovit\\webAPI\\webAPI.csproj": {}
+    "D:\\autovit\\webAPI\\webAPI.csproj": {}
   },
   "projects": {
-    "D:\\proiecte c#\\autovit\\webAPI\\webAPI.csproj": {
+    "D:\\autovit\\webAPI\\webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\proiecte c#\\autovit\\webAPI\\webAPI.csproj",
+        "projectUniqueName": "D:\\autovit\\webAPI\\webAPI.csproj",
         "projectName": "webAPI",
-        "projectPath": "D:\\proiecte c#\\autovit\\webAPI\\webAPI.csproj",
+        "projectPath": "D:\\autovit\\webAPI\\webAPI.csproj",
         "packagesPath": "C:\\Users\\EU\\.nuget\\packages\\",
-        "outputPath": "D:\\proiecte c#\\autovit\\webAPI\\obj\\",
+        "outputPath": "D:\\autovit\\webAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EU\\AppData\\Roaming\\NuGet\\NuGet.Config"

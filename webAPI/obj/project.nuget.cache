@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1fHXtmiJCAZQvxrZjKqdt+C/HJ+v4aOX2qZnt6E3dqoPBYqXkfogREoYbo+nxalVX2R1Pf9FG/UmOWlKBUhaXA==",
+  "dgSpecHash": "kNBFlv8/IxCgpnjoIra9ij2RAEFk04KNyWLktNaToFRJY4KTvIuZWbeuuL7InCZdBTzxsSCx29y2ckpJXlbdug==",
   "success": true,
-  "projectFilePath": "D:\\proiecte c#\\autovit\\webAPI\\webAPI.csproj",
+  "projectFilePath": "D:\\autovit\\webAPI\\webAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EU\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\EU\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
