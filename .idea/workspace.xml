@@ -2,94 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7b9b4f6-79cc-44e5-b649-664de4ced388" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tinderforcatsapi/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tinderforcatsapi/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tinderforcatsapi/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/src/components/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/src/plugins/vuetify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend2/vue.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Context/ModelContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Context/UserContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Controllers/UserController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/20220320214814_FirstMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/20220320214814_FirstMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/20220330220201_UpdateBrand.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/20220330220201_UpdateBrand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/BrandContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/Model/20220330220253_UpdateModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/User/20220330214448_UpdateUser.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/User/20220330214448_UpdateUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/User/UserContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/Services/UserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentatie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentatie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/views/AboutView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tinderforcatsweb2/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/Controllers/ModelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Controllers/ModelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/Migrations/20220305192235_createmigration.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Migrations/Model/20220320215215_SecondMigration.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/Migrations/20220305192235_createmigration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Migrations/Model/20220320215215_SecondMigration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/Migrations/20220310082657_SecondMigration.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Migrations/Model/20220330220253_UpdateModel.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/Migrations/20220310082657_SecondMigration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/Migrations/DBContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Migrations/Model/ModelContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/Models/DBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Context/BrandContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/api/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/api/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/web" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/20220404213806_removeLogo.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/20220404213806_removeLogo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/User/20220401221139_AddAdmin.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webAPI/Migrations/User/20220401221139_AddAdmin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsapi/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsapi/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsapi/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tinderforcatsweb2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/src/views/AboutView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/web/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webAPI/Context/BrandContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Context/BrandContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webAPI/Context/UserContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Context/UserContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webAPI/Controllers/BrandController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Controllers/BrandController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webAPI/Migrations/BrandContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Migrations/BrandContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webAPI/Migrations/User/UserContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Migrations/User/UserContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webAPI/Models/Brand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Models/Brand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webAPI/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Models/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/Services/BrandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Services/BrandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/Services/IService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/Services/IService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Microsoft.DotNet.PlatformAbstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/webAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/webAPI.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/webAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/webAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/webAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/bin/Debug/net6.0/webAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/ref/webAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/ref/webAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/refint/webAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/refint/webAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/Debug/net6.0/webAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/obj/webAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/obj/webAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webAPI/webAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/webAPI/webAPI.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +74,11 @@
       <option name="presentableId" value="Default" />
       <updated>1648680759259</updated>
       <workItem from="1648680764412" duration="6000" />
+      <workItem from="1649150152981" duration="31000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

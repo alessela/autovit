@@ -24,11 +24,6 @@ namespace webAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Logo")
-                        .IsRequired()
-                        .HasColumnType("varchar(256)")
-                        .HasColumnName("logo");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("varchar(32)")

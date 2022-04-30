@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using webAPI.Models;
 using webAPI.Services;
 
@@ -49,14 +48,27 @@ public class UserController : Controller
         return Ok(user);
     }
 
-    [HttpPut]
+    [HttpPut("update")]
     public IActionResult Update(User user)
     {
         User? newU = _service.Update(user);
+        if (newU is null)
+            return BadRequest("email already used");
         return Ok(newU);
     }
+    
+    [HttpPut("changepass")]
+    public IActionResult ChangePassword(String email, String newPassword)
+    {
+        var user = _service.List().FirstOrDefault(u => u.Email.Equals(email));
+        if (user is null) return NotFound("User not found");
+        var newUser = new User(user.Id, user.FirstName, user.LastName, user.Email, newPassword,
+            user.PhoneNumber, user.Address, user.IsAdmin);
+        _service.Update(newUser);
+        return Ok(user);
+    }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
         var result = _service.Delete(id);

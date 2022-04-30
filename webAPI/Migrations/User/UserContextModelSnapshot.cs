@@ -39,6 +39,10 @@ namespace webAPI.Migrations.User
                         .HasColumnType("varchar(64)")
                         .HasColumnName("first_name");
 
+                    b.Property<sbyte>("IsAdmin")
+                        .HasColumnType("tinyint")
+                        .HasColumnName("is_admin");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("varchar(64)")

@@ -21,7 +21,6 @@ public class BrandController : Controller
         var brand = _service.Get(id);
         if (brand is null) return NotFound("Brand not found");
         return Ok(brand);
-        //return View(brand);
     }
 
     [HttpPost]
@@ -40,11 +39,10 @@ public class BrandController : Controller
     [HttpPut]
     public IActionResult Update(Brand brand)
     {
-        Brand? newB = _service.Update(brand);
-        return Ok(newB);
+        return Ok(_service.Update(brand));
     }
     
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
         var result = _service.Delete(id);

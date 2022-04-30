@@ -1,24 +1,22 @@
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using webAPI.Context;
 using webAPI.Models;
 using webAPI.Services;
-using System.Configuration.Provider;
 
 var builder = WebApplication.CreateBuilder(args);
-var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+const string myAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-        builderr =>
+    options.AddPolicy(name: myAllowSpecificOrigins,
+        build =>
         {
-            builderr.AllowAnyOrigin()
+            build.AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader();
         });
 });
 
-string? mySqlConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var mySqlConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Add context
 builder.Services.AddDbContext<BrandContext>(options =>
@@ -27,10 +25,23 @@ builder.Services.AddDbContext<ModelContext>(options =>
     options.UseMySql(mySqlConnectionString!, ServerVersion.AutoDetect(mySqlConnectionString)));
 builder.Services.AddDbContext<UserContext>(options =>
     options.UseMySql(mySqlConnectionString!, ServerVersion.AutoDetect(mySqlConnectionString)));
+builder.Services.AddDbContext<BodyStyleContext>(options =>
+    options.UseMySql(mySqlConnectionString!, ServerVersion.AutoDetect(mySqlConnectionString)));
+builder.Services.AddDbContext<FuelContext>(options =>
+    options.UseMySql(mySqlConnectionString!, ServerVersion.AutoDetect(mySqlConnectionString)));
+builder.Services.AddDbContext<TransmissionContext>(options =>
+    options.UseMySql(mySqlConnectionString!, ServerVersion.AutoDetect(mySqlConnectionString)));
+builder.Services.AddDbContext<ColorContext>(options =>
+    options.UseMySql(mySqlConnectionString!, ServerVersion.AutoDetect(mySqlConnectionString)));
 
 // Add services to the container.
 builder.Services.AddScoped<IService<Brand>, BrandService>();
 builder.Services.AddScoped<IService<User>, UserService>();
+builder.Services.AddScoped<IService<Model>, ModelService>();
+builder.Services.AddScoped<IService<BodyStyle>, BodyStyleService>();
+builder.Services.AddScoped<IService<Fuel>, FuelService>();
+builder.Services.AddScoped<IService<Transmission>, TransmissionService>();
+builder.Services.AddScoped<IService<Color>, ColorService>();
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -48,12 +59,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors(MyAllowSpecificOrigins);
+app.UseCors(myAllowSpecificOrigins);
 
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.MapGet("/", () => "Hello, world");
 
 app.Run();

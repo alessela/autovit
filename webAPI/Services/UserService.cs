@@ -1,4 +1,5 @@
-﻿using webAPI.Context;
+﻿using System.Runtime.CompilerServices;
+using webAPI.Context;
 using webAPI.Models;
 
 namespace webAPI.Services;
@@ -24,7 +25,8 @@ public class UserService : IService<User>
 
     public User Create(User o)
     {
-        o.Id = _context.Users.Count() + 1;
+        if (!_context.Users.Any()) o.Id = 1;
+        else o.Id = _context.Users.ToList()[_context.Users.Count() - 1].Id + 1;
         _context.Users.Add(o);
         _context.SaveChanges();
         return o;
@@ -32,21 +34,25 @@ public class UserService : IService<User>
 
     public User? Update(User newO)
     {
-        var oldO = _context.Users.FirstOrDefault(o => o.Id == newO.Id);
+        var oldO = Get(newO.Id);
         if (oldO is null) return null;
-        oldO.FirstName = newO.FirstName;
-        oldO.LastName = newO.LastName;
+        var anotherUser = _context.Users.FirstOrDefault(o => o.Email.Equals(newO.Email));
+        if (anotherUser is not null)
+            if (anotherUser.Id != oldO.Id)
+                return null;
+        oldO.Address = newO.Address;
         oldO.Email = newO.Email;
         oldO.Password = newO.Password;
+        oldO.FirstName = newO.FirstName;
+        oldO.LastName = newO.LastName;
         oldO.PhoneNumber = newO.PhoneNumber;
-        oldO.Address = newO.Address;
         _context.SaveChanges();
         return newO;
     }
 
     public bool Delete(int id)
     {
-        User? oldUser = _context.Users.FirstOrDefault(o => o.Id == id);
+        User? oldUser = Get(id);
         if (oldUser is null) return false;
         _context.Users.Remove(oldUser);
         _context.SaveChanges();
