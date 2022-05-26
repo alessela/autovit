@@ -1,7 +1,6 @@
 ﻿namespace webAPI.Models;
 
-public class Fuel
+public class Fuel : Base
 {
-    public int Id { get; set; }
     public string? Name { get; set; }
 }

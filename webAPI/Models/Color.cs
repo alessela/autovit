@@ -1,7 +1,6 @@
 ﻿namespace webAPI.Models;
 
-public class Color
+public class Color : Base
 {
-    public int Id { get; set; }
     public string? Name { get; set; }
 }

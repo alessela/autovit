@@ -1,7 +1,6 @@
 ﻿namespace webAPI.Models;
 
-public class BodyStyle
+public class BodyStyle : Base
 {
-    public int Id { get; set; }
     public string? Name { get; set; }
 }

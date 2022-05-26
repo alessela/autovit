@@ -24,12 +24,7 @@ namespace webAPI.Migrations.Model
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Logo")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
@@ -41,17 +36,13 @@ namespace webAPI.Migrations.Model
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("int");
+                        .HasColumnType("int");
 
                     b.Property<int>("BrandId")
-                        .HasColumnType("int")
-                        .HasColumnName("brand_id");
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("varchar(32)")
-                        .HasColumnName("name");
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id")
                         .HasName("PK_Model");

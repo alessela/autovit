@@ -1,7 +1,6 @@
 ﻿namespace webAPI.Models;
 
-public class Transmission
+public class Transmission : Base
 {
-    public int Id { get; set; }
     public string? Name { get; set; }
 }

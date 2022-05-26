@@ -1,17 +1,18 @@
 ﻿namespace webAPI.Models;
 
-public class User
+public class User : Base
 {
-    public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Email { get; set; }
     public string Password { get; set; }
     public string PhoneNumber { get; set; }
     public string Address { get; set; }
-    public bool IsAdmin { get; }
+    public int CityId { get; set; }
+    public bool IsAdmin { get; set; }
 
-    public User(int id, string firstName, string lastName, string email, string password, string phoneNumber, string address, bool isAdmin)
+    public User(int id, string firstName, string lastName, string email, string password, string phoneNumber, 
+        string address, int cityId, bool isAdmin)
     {
         Id = id;
         FirstName = firstName;
@@ -20,6 +21,7 @@ public class User
         Password = password;
         PhoneNumber = phoneNumber;
         Address = address;
+        CityId = cityId;
         IsAdmin = isAdmin;
     }
 }

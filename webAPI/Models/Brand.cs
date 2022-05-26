@@ -1,7 +1,6 @@
 ﻿namespace webAPI.Models;
 
-public class Brand
+public class Brand : Base
 {
-    public int Id { get; set; }
     public string? Name { get; set; }
 }

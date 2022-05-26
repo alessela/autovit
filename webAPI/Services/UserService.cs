@@ -1,42 +1,30 @@
-﻿using System.Runtime.CompilerServices;
-using webAPI.Context;
+﻿using webAPI.Context;
 using webAPI.Models;
 
 namespace webAPI.Services;
 
-public class UserService : IService<User>
+public class UserService : BaseService<User>
 {
-    private readonly UserContext _context;
-
-    public UserService(UserContext context)
+    public UserService(BaseContext<User> context) : base(context)
     {
-        _context = context;
     }
 
-    public User? Get(int id)
+    public override User? Create(User o)
     {
-        return _context.Users.FirstOrDefault(o => o.Id == id);
-    }
-    
-    public List<User> List()
-    {
-        return _context.Users.ToList();
-    }
-
-    public User Create(User o)
-    {
-        if (!_context.Users.Any()) o.Id = 1;
-        else o.Id = _context.Users.ToList()[_context.Users.Count() - 1].Id + 1;
-        _context.Users.Add(o);
-        _context.SaveChanges();
+        if (Context.Items.Any(u => u.Email.Equals(o.Email)))
+            return null;
+        if (!Context.Items.Any()) o.Id = 1;
+        else o.Id = List()[Context.Items.Count() - 1].Id + 1;
+        Context.Items.Add(o);
+        Context.SaveChanges();
         return o;
     }
 
-    public User? Update(User newO)
+    public override User? Update(User newO)
     {
         var oldO = Get(newO.Id);
         if (oldO is null) return null;
-        var anotherUser = _context.Users.FirstOrDefault(o => o.Email.Equals(newO.Email));
+        var anotherUser = Context.Items.FirstOrDefault(o => o.Email.Equals(newO.Email));
         if (anotherUser is not null)
             if (anotherUser.Id != oldO.Id)
                 return null;
@@ -46,16 +34,8 @@ public class UserService : IService<User>
         oldO.FirstName = newO.FirstName;
         oldO.LastName = newO.LastName;
         oldO.PhoneNumber = newO.PhoneNumber;
-        _context.SaveChanges();
+        oldO.CityId = newO.CityId;
+        Context.SaveChanges();
         return newO;
-    }
-
-    public bool Delete(int id)
-    {
-        User? oldUser = Get(id);
-        if (oldUser is null) return false;
-        _context.Users.Remove(oldUser);
-        _context.SaveChanges();
-        return true;
     }
 }

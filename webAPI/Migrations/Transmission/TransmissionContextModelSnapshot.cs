@@ -25,9 +25,7 @@ namespace webAPI.Migrations.Transmission
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("varchar(32)")
-                        .HasColumnName("name");
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id")
                         .HasName("PK_Transmission");
